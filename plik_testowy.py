@@ -19,8 +19,3 @@ for i, city in enumerate(cities):  #wybór 4 pierwszych miast z listy za pomocą
     print(i)
     print("{} spełnia wymagania".format(city))
 
-
-while True:  #pętla do obliczenia sześcianu liczby wybranej przez użytkownika
-    x = input("Wpisz liczbę, aby uzyskać jej sześcian. ")
-    a = int(x)
-    print(a*a*a)
