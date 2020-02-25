@@ -19,3 +19,8 @@ for i, city in enumerate(cities):  #wybór 4 pierwszych miast z listy za pomocą
     print(i)
     print("{} spełnia wymagania".format(city))
 
+print(2.2 * 3.0 == 6.6) ## co tu sie odpierdala XDXDXD
+print(float(2.2 * 3.0))
+
+print(3.3 * 2.0 == 6.6)
+print(float(3.3 * 2.0))
