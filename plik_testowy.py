@@ -25,3 +25,8 @@ print(float(2.2 * 3.0))
 
 print(3.3 * 2.0 == 6.6)
 print(float(3.3 * 2.0))
+
+while True:  ## kalkulator w pętli while [tylko, że się nie konczy jeszcze]
+    x = (input("Wybierz liczbę by uzyskać jej sześcian: "))
+    a = int(x)
+    print(a * a * a)
