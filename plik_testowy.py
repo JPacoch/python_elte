@@ -35,3 +35,38 @@ while True:  ## kalkulator w pętli while [który już się kończy po jednej op
             print("Oops! Kalkulator nie przyjmuje tekstu i/lub dat.")
             break
 
+#cyfereczki
+
+numbers = []
+user_input = input('Next number: ')
+
+while user_input != 'enough':
+    try:
+        num = int(user_input)
+        numbers.append(num)
+    except:
+        print("Not a number, skipped!")
+
+    user_input = input('Next number: ')
+
+print('Your nums: %s' % numbers)
+
+smallest = numbers[0]
+
+for num in numbers:
+    if num < smallest:
+        smallest = num
+print('Smallest is: %s' % smallest)
+
+#kosteczka
+import random
+
+dice = []
+
+for i in range(0, 1000):
+    dice_roll = random.randint(1,6)
+    dice.append(dice_roll)
+
+avg = sum(dice) / len(dice)
+print('Avg value: %.4f' % avg)
+print('Expected value: 3.5')
