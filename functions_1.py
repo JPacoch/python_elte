@@ -16,4 +16,38 @@ class BMI():
         else:
             print("You are obese.")
 
+#Kalkulator fahnrenheit - > celsjusz
+
+def fahr2cels(fahrenheit):
+    c = 5/9 * (fahrenheit - 32)
+    return c
+
+for fahr in range(0,101,10):
+    cels = fahr2cels(fahr)
+    print('Fahr = %d, Cels = %.2f' % (fahr, cels))
+
+import math
+
+
+#Test liczb pierwszych
+
+def isPrime(number):
+    if number < 2: #special case od 1 and 0
+        return False
+
+    for i in range(2, int(math.sqrt(number) + 1)):
+        if number % i == 0:
+            return False
+
+    return True
+
+try:
+    num = int(input("Number to check: "))
+    if isPrime(num):
+        print("%d is a prime" % num)
+    else:
+        print("%d is not a prime" % num)
+except:
+    print("Not a number")
+
 
