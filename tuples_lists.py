@@ -69,3 +69,18 @@ for number in numbers:
 
 print(odds)
 print(evens)
+
+#Collatz sequence
+
+collatz = []
+num = int(input("Wybierz liczbę startową: "))
+
+while num != 1:
+    collatz.append(num)
+    if num % 2 == 0:
+        num = int(num / 2)
+    else:
+        num = int(3 * num + 1)
+
+
+print(collatz)
