@@ -59,3 +59,12 @@ for i in range(0, 1000):
 avg = sum(dice) / len(dice)
 print('Avg value: %.4f' % avg)
 print('Expected value: 3.5')
+
+#piramidka
+
+num = int(input("Wybierz liczbę: "))
+
+for i in range(0,num):
+    for j in range(0, i + 1):
+        print("*", end = " ")
+    print('\n')

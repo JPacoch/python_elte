@@ -49,3 +49,23 @@ print(max_diff)
 print()
 print(min_country)
 print(min_diff)
+
+import random
+
+#2.1
+
+numbers = []
+odds = []
+evens = []
+for i in range(20):
+    numbers.append(random.randint(1, 100))
+print(numbers)
+
+for number in numbers:
+    if number % 2 == 0:
+        odds.append(number)
+    else:
+        evens.append(number)
+
+print(odds)
+print(evens)
