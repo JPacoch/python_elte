@@ -50,4 +50,10 @@ try:
 except:
     print("Not a number")
 
+#anagram check
+def anagram(word1, word2):
 
+    if sorted(word1) == sorted(word2):
+        print("These words are anagrams!")
+    else:
+        print("These words are not anagrams.")
