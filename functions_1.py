@@ -54,6 +54,14 @@ except:
 def anagram(word1, word2):
 
     if sorted(word1) == sorted(word2):
-        print("These words are anagrams!")
+        return True
     else:
-        print("These words are not anagrams.")
+        return False
+
+#pyramid
+def pyramid(height):
+    height = int(height)
+    for up in range(1, height + 1):
+        for width in range(1, up + 1):
+            print("*")
+        print()
