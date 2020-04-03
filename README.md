@@ -1,3 +1,3 @@
-# python_elte
+# ELTE - Python basics
 
-jakieś teściki ogólnie
+Basics mainly.
