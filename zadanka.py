@@ -90,3 +90,31 @@ for idx in range(0,len(countries)):
     idx + 1
 
 print(lista)
+
+max_dens = max(item['density'] for item in lista)
+print(max_dens)
+
+class Country():
+    name = 'Country'
+
+    def card(self, idxx):
+        name = countries[idxx]
+        caps = capitals[idxx]
+        pops = populations[idxx]
+        area = areas[idxx]
+        return print("Country name: %s. Capital: %s. Population: %f mln. Area: %f km2. " % (name, caps, pops, area))
+
+    def density(self, idxx):
+        name = countries[idxx]
+        dens = populations[idxx] / areas[idxx] * 1000000
+        return print("z/km2" % (name, dens))
+
+state = Country()
+state.card(12)
+state.density(12)
+
+listt = []
+
+for i in range(len(countries)):
+    state.card(i)
+    state.density(i)
