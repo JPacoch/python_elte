@@ -59,3 +59,48 @@ def funkcja(x):
     else:
         print("nie ma buzi")
 funkcja(2)
+
+lista = []
+dicc = {}
+
+for idx in range(0,len(companies)):
+    dicc = {
+        "name": companies[idx],
+        "revenue": revenue[idx],
+        "profit": profit[idx],
+        "employees": employees[idx]
+    }
+    lista.append(dicc)
+    idx + 1
+
+def revenue_per_employee(company):
+    for dic in lista:
+        try:
+            if dic["name"] == company:
+                re = dic["revenue"] / dic["employees"]
+                dic["revenue/employees"] = re
+                return dic
+                break
+        except:
+            print('nan')
+
+revenue_per_employee("General Mills")
+
+lista2 = [obiekt['name'] for obiekt in lista]
+for kutas in range(0, len(lista2)):
+    a = (revenue_per_employee(lista2[kutas]))
+    lista2.append(a)
+    kutas + 1
+
+lista3 = []
+lista2 = [obiekt['name'] for obiekt in lista]
+for k in range(0, len(lista2)):
+    lista3.append(revenue_per_employee(lista2[k]))
+    k + 1
+
+
+def highest_revenue_per_employee(wybrana_lista):
+    maksymalna = max(wybrana_lista, key=lambda x: x['revenue/employees'])
+    return maksymalna
+
+print(highest_revenue_per_employee(lista3))
