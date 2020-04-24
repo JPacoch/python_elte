@@ -32,3 +32,10 @@ df_count_sorted = df_count.sort_values(by = 'iata', ascending=False)
 df_elev = df.groupby('city')['elevation'].mean()
 df_elev_sorted = df_elev.sort_values(ascending=False)
 
+df_run1 = df.groupby('city').sum()
+df_run_sorted1 = df_run1.sort_values(by = 'runways',ascending=False)
+print(df_run_sorted1[df_run_sorted1.runways > 5])
+
+df_run = df.groupby('city')['runways'].sum()
+df_run_sorted = df_run.sort_values(ascending=False)
+print(df_run_sorted > 5) #displays boolean
