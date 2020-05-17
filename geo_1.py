@@ -6,3 +6,4 @@ countries = gpd.read_file('datasets/ne_10m_admin_0_countries.shp')
 
 countries.plot(figsize=[10,5])
 plt.show()
+
