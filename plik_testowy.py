@@ -8,7 +8,7 @@ else: print(b)
 
 for i in range(-3,24,4):  #wybór co czwartej liczby z przedziału (-3;24)
     print(i)
-print(2.2 * 3.0 == 6.6) ## co tu sie odpierdala XDXDXD
+print(2.2 * 3.0 == 6.6) ## co tu sie
 print(float(2.2 * 3.0))
 
 print(3.3 * 2.0 == 6.6) ## no a tu juz jest git
