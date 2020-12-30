@@ -11,4 +11,4 @@ driver.get(webpageLink)
 for i in range(viewsCount):
     time.sleep(refreshInterval)
     driver.refresh()
-    print(i)
+    print(i)   
